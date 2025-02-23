@@ -46,9 +46,7 @@ function App() {
   
   return (
     <div className="App">
-        <head>
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        </head>
+        
       {loading ? <Loading /> : <Main
       HandleLocation={HandleLocation}
       handleSubmit={handleSubmit}
