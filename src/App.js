@@ -17,7 +17,13 @@ function App() {
       await axios.get(URL)
         .then(response => {
           setApi(response.data);
-      }).catch(error => console.log(error))
+      }).catch(error => {
+        console.error(error);
+        setTimeout(() =>{
+          alert('invalid city name')
+          setLoading(false)
+        }, 2000)
+      })
     }
 
     const handleSubmit = (e) =>{
