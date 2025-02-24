@@ -17,7 +17,7 @@
   height: 570px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url('https://images.pexels.com/photos/110874/pexels-photo-110874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('./assets//HD\ wallpaper_\ nature\,\ 1920x1080\,\ dark\,\ rain\,\ Forest\,\ 4k\ \ wallapapers.jpeg');
 box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 backdrop-filter: blur( 4.5px );
 -webkit-backdrop-filter: blur( 4.5px );
@@ -177,5 +177,8 @@ li .p span{
     position:relative;
     width: 100%;
     height: auto;
+  }
+  .order{
+    order: -1 !important;
   }
 }
