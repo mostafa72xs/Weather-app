@@ -5,6 +5,9 @@ import { FaTemperatureHalf } from "react-icons/fa6";
 import { MdOutlineWaterDrop } from "react-icons/md";
 import { BsClouds } from "react-icons/bs";
 import { FiWind } from "react-icons/fi";
+import { BsCloudDrizzle } from "react-icons/bs";
+import { GoSun } from "react-icons/go";
+import { FaRegSnowflake } from "react-icons/fa";
 
 
 
@@ -36,11 +39,21 @@ return(
       <p> {month[mo.getMonth()]}</p>
       )
   }
-
+function Icons(){
+    if(current?.temp_c > 20){
+      return <GoSun className='order' size={50} />
+    }
+    else if(current?.temp_c < 10){
+      return <FaRegSnowflake className='order' size={50}/>
+    }
+    else{
+      return <BsCloudDrizzle  className='order' size={50}/>
+    }
+  }
 
   
   return (
-        <div className='bigbox' style={{backgroundImage:current?.temp_c > 20 ? back.summer : back.winter}}>
+        <div className='bigbox' style={{backgroundImage: current?.temp_c < 10 ? back.winter : current?.temp_c > 20 ? back.summer : ''}}>
         <div className='smallbox'>
           <h1 style={{fontSize:'70px' , fontWeight:'500'}}>{current?.temp_c || 'N/A'}°</h1>
           <div className='title'>
@@ -53,6 +66,7 @@ return(
             <p> {current?.last_updated.slice(0,4) || 'N/A'}</p>
             </div>
           </div>
+          <Icons />
         </div>
         <div  className='side'>
         <form onSubmit={props.handleSubmit}>
