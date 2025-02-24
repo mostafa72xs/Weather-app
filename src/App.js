@@ -3,6 +3,8 @@ import './App.css';
 import Main from './components/main'
 import Loading from './components/Loading'
 import axios from 'axios';
+import Head from './head';
+
 
 function App() {
       const [ loading , setLoading ] = useState(false);
@@ -46,7 +48,7 @@ function App() {
   
   return (
     <div className="App">
-        
+        <Head />
       {loading ? <Loading /> : <Main
       HandleLocation={HandleLocation}
       handleSubmit={handleSubmit}
