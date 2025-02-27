@@ -37,7 +37,7 @@ function App() {
           const API_URLgeo = `http://api.weatherapi.com/v1/forecast.json?key=${APIKEY}&q=${latitude},${longitude}&days=6`;
           getJson(API_URLgeo);
         }, () =>{
-          alert('you decliend')
+          alert('you decliend the request to show your location ')
         }
       );
     }
