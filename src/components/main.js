@@ -101,7 +101,7 @@ function Icons(){
         <div className='line'></div>
         <ul>
           <p style={{textAlign:'left' , fontWeight:'bold'}}>Daily Weather Forecast</p>
-          {forecast.slice(1,5).map((item, index) => (
+          {forecast.slice(1,6).map((item, index) => (
             <li key={index}>
               <div className='p'>
                 <Day date={item.date} />
