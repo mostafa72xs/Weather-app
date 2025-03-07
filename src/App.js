@@ -8,7 +8,7 @@ import Head from './head';
 
 function App() {
       const [ loading , setLoading ] = useState(false);
-      const APIKEY = 'd6d2c8757c5f4cf98f9123417252202';
+      const APIKEY = 'ef69b46d69cb4aafba091508250703';
     const [ data , setData ] =useState()
     const [ api , setApi ] = useState();
     const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${APIKEY}&q=${data}&days=6`;
