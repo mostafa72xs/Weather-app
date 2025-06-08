@@ -5,8 +5,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-height: 750px;
-  height:651px;
+  height:100%;
   background-color: #1A1A1A;
   color: white;
   font-family: "Inter", serif;
@@ -16,7 +15,7 @@
 }
 .bigbox{
   width: 90%;
-  height: 570px;
+  height: 75%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url('./assets//HD\ wallpaper_\ nature\,\ 1920x1080\,\ dark\,\ rain\,\ Forest\,\ 4k\ \ wallapapers.jpeg');
