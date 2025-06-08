@@ -5,11 +5,13 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  min-height: 750px;
   height:651px;
   background-color: #1A1A1A;
   color: white;
   font-family: "Inter", serif;
   font-weight: 300;
+  
 
 }
 .bigbox{
